@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { AngleVisualizer } from './components/AngleVisualizer';
+import { MathVisualizer } from './components/MathVisualizer';
 import { ShieldIcon, MindIcon } from './components/icons';
 
 const useIntersectionObserver = (options: IntersectionObserverInit) => {
@@ -93,6 +94,14 @@ const App: React.FC = () => {
             </p>
           </div>
           <AngleVisualizer />
+        </Section>
+
+        <Section className="mb-24 md:mb-32">
+          <div className="text-center">
+            <div className="w-16 h-1 bg-blue-600 rounded-full mx-auto mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1d1d1f] mb-8">三角比で見るエスカレーター</h2>
+          </div>
+          <MathVisualizer />
         </Section>
         
         <Section className="mb-24 md:mb-32">
